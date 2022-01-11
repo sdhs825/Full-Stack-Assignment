@@ -1,0 +1,7 @@
+.event-wrapper{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    left: 10%;
+}

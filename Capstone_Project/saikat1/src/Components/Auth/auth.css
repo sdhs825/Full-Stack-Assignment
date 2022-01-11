@@ -1,0 +1,21 @@
+form{
+    display: grid;
+    width: 100%;
+}
+
+.auth-wrapper{
+    position: relative;
+    display: inline-flex;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+.reg-sub-wrapper{
+    width: 50%;
+}
+
+.login-sub-wrapper{
+    width: 50%;
+}
