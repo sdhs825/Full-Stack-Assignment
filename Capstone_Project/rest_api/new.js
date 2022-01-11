@@ -7,10 +7,16 @@ const app= express();
 const saltRounds = 2;
 app.use(express.json());
 
-const createDB = async () => {
+var connection = mysql.createConnection({ //connection of database
+    host:'localhost',
+    user:'root',
+    password: 'Saikatdas@8377'
+})
+
+const createDB = async () => {  //creating the database if not created already
     const createDB = "CREATE DATABASE IF NOT EXISTS task"
-    const createUserTable = "CREATE TABLE user(uid INT NOT NULL auto_increment, username VARCHAR(255) NOT NULL, gender VARCHAR(255), email VARCHAR(255) NOT NULL UNIQUE,password varchar(255) not null, PRIMARY KEY (uid));"
-    const createEventsTable = "CREATE TABLE events(id INT NOT NULL AUTO_INCREMENT,uid INT NOT NULL,eventname VARCHAR(255) NOT NULL,description varchar(255) not null,startTime DATE NOT NULL,endTime DATE,PRIMARY KEY (id),FOREIGN KEY (uid) REFERENCES user(uid));"
+    const createUserTable = "CREATE TABLE user(uid INT NOT NULL auto_increment, username VARCHAR(255) NOT NULL, gender enum('Male','Female'), email VARCHAR(255) NOT NULL UNIQUE, PRIMARY KEY (uid));"
+    const createEventsTable = "CREATE TABLE events(id INT NOT NULL AUTO_INCREMENT,uid INT NOT NULL,eventname VARCHAR(255) NOT NULL,description enum('Weekly','Monthly','Yearly','Onetime') not null,startTime DATE NOT NULL,endTime DATE,PRIMARY KEY (id),FOREIGN KEY (uid) REFERENCES user(uid));"
 
     await connection.query(createDB, (err) => {
         if(err) throw err;
@@ -37,12 +43,6 @@ const createDB = async () => {
     });
 }
 
-const connection = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'Saikatdas@8377',
-    database:'task'
-})
 
 app.post('/adduser',async(req,res)=>{
     const name=req.body.name;
@@ -160,8 +160,8 @@ const callback = () => {
     connection.connect((err)=>{
         if(err) throw err;
         console.log('Database Connected');
+        createDB();
     })
     
 }
 app.listen(PORT, callback)
-
