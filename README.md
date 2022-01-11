@@ -5,6 +5,13 @@ In the assignment 1 , I have used C++ to take name a input and returned a random
 
 In assignment 2 , I have taken some users and their corrosponding events with Mysql . The .sql and the .docx file contains the queries and the Csv file contains the values on user and events databases.
 
+In assignment 3, I have build a rest api with MySQL database.Run npm install first in this directory the run nodemon. I have used node.js express.js stack to make this rest api.
+Adding user to database
+![Screenshot from 2022-01-11 22-49-16](https://user-images.githubusercontent.com/95737916/148991433-bb7f8abb-1ae4-4d65-86b0-516fcb52f01d.png)
+Adding event to database
+![Screenshot from 2022-01-11 22-50-03](https://user-images.githubusercontent.com/95737916/148991465-61f5baea-eaca-4471-822d-694382a4fc99.png)
+
+
 In assignment 7, Some users and items are taken now we have to see a user can book a item following the criteria that a user can book a definite item for once, multiple user can't book the same item for 7 days and a user can book multiple items any time. Now here is the output 
 
 ![Output pic](https://user-images.githubusercontent.com/95737916/147390330-86a5d593-0dd5-4792-ad2e-8830222c165b.jpeg)
