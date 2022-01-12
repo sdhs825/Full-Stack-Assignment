@@ -12,6 +12,20 @@ Adding event to database
 ![Screenshot from 2022-01-11 22-50-03](https://user-images.githubusercontent.com/95737916/148991465-61f5baea-eaca-4471-822d-694382a4fc99.png)
 
 
+In assignment 5, I have to add user, items and book items per user so that there is no overlap of booking.I have used the API stack of Node.js , express.js and below are my execution of Rest api.
+
+![Screenshot from 2022-01-12 17-31-18](https://user-images.githubusercontent.com/95737916/149137576-a49d6b08-0676-4ef5-a12d-b5760af6270d.png)
+
+![Screenshot from 2022-01-12 17-31-34](https://user-images.githubusercontent.com/95737916/149137726-656ac68f-c45a-4cca-a092-a8f0b01ac45a.png)
+
+![Screenshot from 2022-01-12 17-32-45](https://user-images.githubusercontent.com/95737916/149137749-da6a5a22-15c7-4e96-b8ca-a4e932cf96b7.png)
+
+![Screenshot from 2022-01-12 17-33-21](https://user-images.githubusercontent.com/95737916/149137768-0779557a-6f20-4bd9-8b2d-f69443ffa343.png)
+
+![Screenshot from 2022-01-12 17-33-29](https://user-images.githubusercontent.com/95737916/149137776-9c27eac1-8c8c-4dfe-89f3-aee133e98ce4.png)
+
+
+
 In assignment 7, Some users and items are taken now we have to see a user can book a item following the criteria that a user can book a definite item for once, multiple user can't book the same item for 7 days and a user can book multiple items any time. Now here is the output 
 
 ![Output pic](https://user-images.githubusercontent.com/95737916/147390330-86a5d593-0dd5-4792-ad2e-8830222c165b.jpeg)
